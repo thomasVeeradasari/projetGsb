@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    line-height: 1;
+    background-color:#F1F1E6 ;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Login Page */
+
+nav {
+    background-color: #123E6A;
+}
+
+nav ul.navMenu {
+    list-style: none;
+    display: inline-flex;
+    float: right;
+    line-height: 100px;
+    padding-right: 25px;
+}
+
+nav ul.navMenu li {
+    padding-left: 25px;
+}
+
+nav a img {
+    height: 80px;
+    padding-left: 25px;
+    margin: 10px 0px;
+}
+
+.wrapper-login {
+    height: calc(100vh - 190px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-login {
+
+    display: flex;
+
+}
+
+.container-login img  {
+    height: 345px;
+    border: 1px solid silver;
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.login-form {
+    border: 1px solid silver;
+    border-left: none;
+    border-radius: 0px 5px 5px 0px;
+    max-width: 500px;
+    background-color: #F1F1E6;
+    padding: 30px 50px;
+}
+
+h2.form-title {
+    color: #123E6A;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 20px 0px 25px 0px;
+
+}
+
+.login-form label {
+    display: block;
+    width: 120px;
+    color: #A09FA6;
+    font-size: 12px;
+    letter-spacing: .1em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.login-form input{
+    margin-bottom: 10px;
+    display: block;
+    background-color: rgba(#000000, 0.6);
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+
+.erConnexion {
+    visibility: hidden;
+    color: red;
+    position: absolute;
+    margin-top: -8px;
+    font-style: italic;
+    font-size: small;
+}
+
+/* .forgot-pass {
+    color: #0A94FA;
+    text-align: right;
+    font-size: .75em;
+    margin-bottom: 10px;
+    text-decoration: none;
+} */
+
+.register {
+    text-align: left;
+    color: #123E6A;
+    font-size: .75em;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.registration {
+    text-decoration: none;
+    color: #0A94FA;
+}
+
+.login-form input[type="submit"] {
+    margin-top: 20px;
+    border: none;
+    color: white;
+    background-color: #123E6A;
+}
+
+/* inscription */
+
+.erId, .erNom, .erPrenom, .erLogin, .erMdp, .erAdresse, .erCp, .erVille, .erDate {
+    display: none;
+    position: absolute;
+    margin-left: 50px;
+    line-height: 1.6;
+    font-style: italic;
+    font-size: small;
+    background-color: #37699c;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 350px;
+}
+
+.loginText {
+    padding-left: 5px;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.flex-inscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-inscription {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-inscription form h1 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    color: #123E6A;
+    margin: 25px 0px;
+}
+
+.container-inscription form {
+    margin: 50px;    
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 500px;
+    padding: 25px;
+}
+
+form.signup label {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 130px;
+    color: #123E6A;
+    
+}
+
+form.signup input{
+    margin-bottom: 10px;
+    background-color: rgba(#000000, 0.6);
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+
+/* gestionFrais */
+
+.flexWrap {
+    display: flex;
+    position: relative;
+}
+
+.sideMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #123E6A;
+    position: fixed;
+    color: white;
+    z-index: 10;
+}
+
+.sideMenu img {
+    margin: 5px;
+    width: 150px;
+    vertical-align: middle;
+    margin: 10px auto;
+}
+
+.sideMenu nav {
+    padding: 26px;
+}
+
+.sideMenu nav ul {
+    list-style: none;
+}
+
+.sideMenu nav a {
+    padding: 13px 17px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    transition-duration: 0.25s;
+    border-radius: 6px;
+    border-radius: 6px;
+    width: 100%;
+    position: relative;
+}
+
+.sideMenu nav a span {
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    transition-duration: 0.2s;
+    transition-delay: 0.1s;
+}
+
+.sideMenu nav a:hover, .sideMenu nav a:focus {
+    background-color: #295f96;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+}
+
+.sideMenu .logout {
+    height: 50px;
+    position: relative;
+    left: 35px;
+}
+
+.sideMenu .logout .lni-power-switch {
+    line-height: 1.2;
+    font-size: 1.5rem;
+}
+
+.sideMenu .logout .logoutText {
+    font-size: 0.75rem;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-weight: 300;
+}
+
+main {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    overflow: hidden;
+}
+
+.innerWrapper {
+    padding: 0 33px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.sectionContainer {
+    background-color: white;
+    border-radius: 15px;
+    padding: 48px;
+}
+
+.sectionHead {
+    margin: 25px 0px 0px 0px;
+}
+
+.sectionHead span {
+    padding-bottom: 20px;
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 80px;
+    letter-spacing: 1px;
+}
+
+.sectionHead span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 50px;
+    height: 1px;
+    background: #333;
+}
+
+.formContainer {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+table.gestion {
+    border-collapse: collapse;
+    margin-top: 32px;
+    font-size: 0.9em;
+    width: 100%;    
+}
+
+table.gestion thead {
+    background-color: #22577E;
+    height: 32px;
+    color: whitesmoke;
+}
+
+table.gestion tr.column-title {
+    text-align: left;
+    height: 32px;
+    color: #22577E;    
+}
+
+table.gestion label {
+    padding-left: 10px;
+}
+
+table.gestion tr {
+    border-bottom: 1px solid white;
+}
+
+table.gestion tr:nth-of-type(even) {
+    background-color: #F1F1E6;
+}
+
+table.gestion tr:last-of-type {
+    border-bottom: 2px solid #22577E;
+}
+
+table.gestion input , select  {
+    font-size: 0.75rem;
+    font-weight: 300;
+    width: 150px;
+    padding: 5px;
+    margin: 10px 0px 10px 10px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+table.gestion input[type="file"] {
+    border: none;
+    width: 100%;
+}
+
+button.add {
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    width: 52px;
+    height: 22px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit input[type="submit"] {
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 150px;
+    height: 32px;
+    color: whitesmoke;
+    border: none;
+    border-radius: 2px;
+    background-color: #22577E;
+}
+
+div.important {
+    border: 1px solid grey;
+    margin-top: 42px;
+    padding: 10px;
+    font-size: 0.75em;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+div.important h3 {
+    margin: 15px 0px;
+}
+
+div.important ol li {
+    margin-bottom: 10px;
+}
+
+div.important ul, ol li {
+    list-style-position: inside;
+}
+
+div.important ul li {
+    padding-left: 1em;
+}
+
+table.gestion tbody.consulter tr td p {
+    font-size: 0.75rem;
+    font-weight: 300;
+    min-width: 150px;
+    padding: 5px 2px;
+    margin: 10px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 3px;
+    background-color: white;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+}
+
+
+footer p.topnav {
+    margin: 0 auto;
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer p.sidenav {
+    padding-left: 120px;
+    margin: 0 auto;
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/**********************/
+/*   MAX WIDTH 900PX  */
+/**********************/
+
+@media (max-width: 990px) {
+    
+    .erId, .erNom, .erPrenom, .erLogin, .erMdp, .erAdresse, .erCp, .erVille, .erDate {
+        position: relative;
+        margin: 2px;
+        max-width: 350px;
+    }
+}
+
+/**********************/
+/*   MAX WIDTH 767PX  */
+/**********************/
+@media (max-width: 767px) {
+
+
+    /*Inscription*/
+
+    .erId, .erNom, .erPrenom, .erLogin, .erMdp, .erAdresse, .erCp, .erVille, .erDate {
+        position: relative;
+        margin: 2px;
+        max-width: 350px;
+    }
+
+    .container-login  {
+        margin: 15px;
+    }
+
+}
+
+/**********************/
+/*   MAX WIDTH 570PX  */
+/**********************/
+@media (max-width: 570px) {
+
+    /*connexion*/
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul.navMenu {
+        list-style: none;
+        display: block;
+        line-height: normal;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+
+    nav ul.navMenu li {
+        padding: 5px 0px;
+    }
+    
+    nav a img {
+       padding: 0px;
+        margin: 20px 0px;
+    }
+        
+    .wrapper-login {
+        height: calc(100vh - 250px);
+        display: flex;
+    }
+        
+    .container-login img  {
+        display: none;
+    }
+    
+    .login-form {
+
+        border: 1px solid silver;
+        border-radius: 5px;
+        padding: 10px;
+    } 
+    
+    h2.form-title {
+        text-align: center;    
+    }
+    
+    /*Inscription*/
+    
+    .erId, .erNom, .erPrenom, .erLogin, .erMdp, .erAdresse, .erCp, .erVille, .erDate {
+        position: relative;
+        margin: 2px;
+        max-width: 350px;
+    }
+    
+    .container-inscription form {
+        max-width: 350px;
+    }   
+   
+
+}
